@@ -1,0 +1,9 @@
+DB_Url£ºlocalhost
+DB_Name£ºcs10yq
+Name£ºcsad
+Pwd£º17fyFDKix
+
+FTP:
+202.114.177.130
+Account£ºWEB#CSA
+Pwd£ºUYhui23mx

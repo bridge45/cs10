@@ -1,0 +1,54 @@
+﻿<include file="./Home/View/Index/head.html" />
+    <div id="page">
+        <div id="top">
+            <div id="topcontainer"><div class="view-ad">
+                  <div class="img"><img alt="" src="<{$Topimg}>" width='960px' height='217px'></div>
+                  <div class="dqwz">当前位置： <a href="./index.php">首页</a>>><{$LeftName}></div>
+            </div>
+        </div> 
+     </div>
+   
+   <div id="main">
+		<div id="col1">
+			<div id="col1_content" class="clearfix">
+				<!-- include the left navigation menu -->
+				 <div id="nav_left">
+                   <ul>			
+                        <li class="current"><a target="_self" href="#"><{$LeftName}></a> </li>      
+                        <volist name="LeftAl" id="LeftAlVal">
+                            <li>
+                               <a target="_self" href="?c=index&a=al&type=<{$LeftAlVal['navId']}>&id=<{$LeftAlVal['id']}>">  
+                                   <{$LeftAlVal['title']|mb_substr=###,0,13,'utf-8'}><{$LeftAlVal['title']|check_str=###,13}>
+                               </a>
+                           </li>
+                       </volist> 
+                    </ul>
+                </div>
+                <!-- include the boxes on the left side -->
+                <include file="./Home/View/Index/blessingBlock.html" />
+
+          </div>
+	</div>
+    
+    <div id="col3">
+        <div id="col3_content" class="clearfix">
+            <div id="rightcontainer"><div class="article view-article ">
+                <h2><{$NavMsg['name']}>:<{$NavMsg['description']}>&nbsp;&nbsp;发布于：<{$NavMsg['addtime']}></h2>
+                <div class="mainContent"> <{$FirstContent|htmlspecialchars_decode=###}> </div>
+                <h2></h2>
+                <div style="text-align:right; margin-top:15px; color:#999"><{$Config.title}>&nbsp;<{$Config.theme}></div>
+            </div>
+        </div>
+   </div>
+   
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>            
+                        
+                        
+<!--foot 底部导航 和 声明-->  
+<include file="./Home/View/Index/nav.html" />
+</body>
+</html>

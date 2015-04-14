@@ -1,0 +1,87 @@
+﻿<include file="./Home/View/Index/head.html" />
+    <div id="page">
+        <div id="top">
+            <div id="topcontainer"><div class="view-ad">
+                  <div class="img"><img alt="" src="<{$RootUrl}>/images/blessing.jpg" width='960px' height='217px'></div>
+                  <div class="dqwz">当前位置： <a href="./index.php">首页</a>>>祝福展示</div>
+            </div>
+        </div> 
+     </div>
+   
+   <div id="main">
+		<div id="col1">
+			<div id="col1_content" class="clearfix">
+                <include file="./Home/View/Index/blessingBlock.html" />
+          </div>
+	</div>
+    
+    <div id="col3">
+       <div id="col3_content" class="clearfix">
+				<div id="rightcontainer"><div class="list list-wide">
+
+	<h4>家长秘籍|Cheats</h4>
+		<div class="list_body">
+		<!-- paging info -->
+			<!-- list entry property name order -->
+			<div class="list_page">
+				<ul>
+                
+                
+                
+                <volist name="XYDJ" id="AlList">
+                
+					<li class="first">
+                    
+				      <h5><{$AlList.name}></h5>
+						    
+							<div class="list_entry_date"><{$AlList.addtime|date='Y-m-d H:i:s',###}></div>
+							<div class="list_entry_text">
+									<{$AlList.content}>
+									</div>
+							<div class="clear"></div>
+			        </li>
+            
+            
+               </volist>
+                                   
+                           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+      
+		</ul>
+				<div class="clear"></div>
+			</div>
+
+			<div class="pagination">
+							<ul class="pagebar">
+                                <{$page}>
+							
+							</ul>
+						</div>
+					</div>
+	</div></div>
+   </div>
+   
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>            
+                        
+                        
+<!--foot 底部导航 和 声明-->  
+<include file="./Home/View/Index/nav.html" />
+</body>
+</html>

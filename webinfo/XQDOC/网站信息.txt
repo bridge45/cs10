@@ -1,0 +1,9 @@
+数据库地址：localhost
+数据库名：cs10yq
+数据库用户：csad
+数据库密码：17fyFDKix
+
+计算机学院院庆服务器地址
+202.114.177.130
+FTP账户：WEB#CSA
+密码：UYhui23mx

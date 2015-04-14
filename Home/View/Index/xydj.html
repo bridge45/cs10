@@ -1,0 +1,117 @@
+<include file="./Home/View/Index/head.html" />
+<script type="text/javascript" src="<{$RootUrl}>/js/index.js"></script>
+    <div id="page">
+        <div id="top">
+            <div id="topcontainer"><div class="view-ad">
+                  <div class="img"><img alt="" src="<{$RootUrl}>/images/xydj.jpg" width='960px' height='217px'></div>
+                  <div class="dqwz">当前位置： <a href="./index.php">首页</a>>>校友登记</div>
+            </div>
+        </div> 
+     </div>
+   
+   <div id="main">
+		
+    
+    <div id="col3" style="width:950px">
+        <div id="col3_content" class="clearfix">
+            <div id="rightcontainer"><div class="article view-article ">
+                <h2>我要祝福</h2>
+                <div class="mainContent"> 
+                <!-- 祝福模块 -->
+<div id="leftcontainer">
+    <div class="listB">
+	        <div class="list_bodyB">
+	             <form id="formDemoClass" method="post" action="<{:U('home/xydj/save')}>">
+	          <table border="0" style="border-collapse:collapse;border:0;width:100%;">
+    	           <tbody>
+                   <tr>
+        	            <td><label for="name">您的姓名</label></td>
+		           </tr>
+                   
+                   <tr>
+                      <td><input style="width:150px;" type="text" name="name" id="name"></td>
+                   </tr>
+                   
+                   
+                  <tr>
+        	         <td><label for="content">曾系别班级：</label></td>
+		          </tr>
+                  
+                   <tr>
+                      <td><input style="width:150px;" type="text" name="aclass" id="aclass">
+                   </tr>
+                   
+                   <tr>
+                        <td><label for="connects">您的联系方式：</label></td>
+                   </tr>
+                   
+                <tr>
+                    <td>
+                      <input style="width:150px;" type="text" name="telphone" id="telphone">
+                  </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                      <label for="verifycode">验证码</label></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                     <input name='verifycode' type=text value="" maxLength=4 size=10 style="width:100px; height:28px">
+                                      <img style="cursor: pointer; vertical-align:top" mce_style="cursor: pointer" src="<{$RootJ}>/Home/Common/verifyCode.php"
+                                        onclick="this.src='<{$RootJ}>/Home/Common/verifyCode.php?'" width="70px" height="28px" alt="刷新验证码"/>
+                  </td>
+                </tr>
+    	
+                <tr style="width:100px;">
+                    <td style="padding-top:10px;"><input style="width:100px;" type="submit" name="submitButton" value="保存登记" class="submit">
+                      <a href="./index.php" style="padding-left:20px;">返回首页>></a></td>
+                </tr>
+	</tbody>
+    </table>
+	</form>
+	       </div>
+           <div class="list_bodyB">
+	        
+             <a href="#" class="cbmc-left-box-newstitlec"><h3><font color="f12a20" size="+1"><strong>校友登记说明</strong></font></h3></a>
+	                          <div id="scrollDiv" style="width:380px; height:236px;" class="cbmc-left-box-desc">
+                                  <ul> 
+                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不论您身在何处，不论您正在求学或工作，不论您是平淡还是出色，我们都有一个共同的身份，那就是湖工人。
+                                       您已离开了学校，但湖工会永远记住您在此留下的印记，牵挂您，渴望得到您的消息，同时，我们也会把湖工今天的消息告诉您。
+                                       我们希望借这次校庆的机会，将所有的湖工计算机学院校友联系起来，分享我们共同拥有的经历，传承湖工精神。
+                                       请在左边表格中登记您的或您知道的校友信息，非常感谢您的参与。
+                                       请大家放心填写信息，特别是联系方式，以便我们联系大家。前台已隐藏了重要信息，谢谢大家！
+                                   </ul> 
+                              </div>
+                           
+            
+            
+            
+            
+            
+            
+	       </div>
+   </div>
+</div>
+
+
+                
+                </div>
+                <h2></h2>
+                <div style="text-align:right; margin-top:15px; color:#999"><{$Config.title}>&nbsp;<{$Config.theme}></div>
+            </div>
+        </div>
+   </div>
+   
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>            
+                        
+                        
+<!--foot 底部导航 和 声明-->  
+<include file="./Home/View/Index/nav.html" />
+</body>
+</html>

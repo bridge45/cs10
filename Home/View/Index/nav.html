@@ -1,0 +1,17 @@
+<div id="navbar">
+	<div id="navbar-body">
+		<div class="nb-top">
+			<a href="/"><img class="nb-top-10" src="<{$RootUrl}>/images/logo10.png" /></a>
+			<ul class="nb-top-nav">
+                 <li><a href="index.php" >首 页</a></li>
+                <volist name="Nav" id="NavVar">
+				   <li><a href="?c=index&a=navaction&navA=<{$NavVar.link}>" title='<{$NavVar.description}>'><{$NavVar.name}></a></li>
+                </volist> 
+			</ul>
+		</div>
+		 <!--foot 底部-->  
+		<include file="./Home/View/Index/foot.html" />
+	</div>
+</div>
+</body>
+</html>

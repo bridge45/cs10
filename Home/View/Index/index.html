@@ -1,0 +1,80 @@
+﻿<include file="./Home/View/Index/head.html" />
+<script type="text/javascript" src="<{$RootUrl}>/js/index.js"></script>
+<div id="content">
+	<div id="content-body">
+		<div class="cb-main">
+         
+           <!--wrapper -->
+            <div class="wrapper">
+               <ul id="sb-slider" class="sb-slider">
+					<volist name="Banner" id="Banner">
+					<li class="" style="display: none;">
+						<img src="<{$Banner.content}>" alt="<{$Banner.text}>">
+						<div class="sb-description">
+							<h3><{$Banner.text}></h3>
+						</div>
+					</li>
+				 </volist> 
+				</ul>
+               <div id="nav-arrows" class="nav-arrows" style="display:none;">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+            </div>
+			<!-- /wrapper -->
+			
+
+            <div class="cbm-content">
+				<div class="cbmc-left">
+	                <volist name="Al" id="AlVal">
+						<div class="cbmc-left-box">
+	                          <div class="cbmc-left-box-title cbmc-left-box-title-<{$AlVal.color}>"><a href="?c=index&a=navaction&navA=<{$AlVal.link}>"><{$AlVal.name}></a></div>
+	
+	                          <a href="?c=index&a=navaction&navA=<{$AlVal.link}>" class="cbmc-left-box-img"><img 
+	                          src="<{$AlVal.content}>" width="300px" height="150px" />
+	                           </a>
+	                          <a href="?c=index&a=navaction&navA=<{$AlVal.link}>" class="cbmc-left-box-newstitle"><h3><{$AlVal.description}></h3></a>
+	                          <div class="cbmc-left-box-desc">
+	                               <volist name="AlVal['more']" id="AlMore">
+	                                 <a href="?c=index&a=al&type=<{$AlVal.id}>&id=<{$AlMore.id}>">
+	                                 <{$AlMore.title|mb_substr=###,0,6,'utf-8'}>
+	                                 &nbsp;/&nbsp;</a>
+	                               </volist> 
+	                               </a><a href="?c=index&a=al&type=<{$AlVal.id}>&id=<{$AlMore.id}>">更多>></a>
+	                          </div>
+						 </div>
+				   </volist> 
+				   
+				    <!-- >******< -->
+	                          <div class="cbmc-left-boxA">
+	                          <a href="#" class="cbmc-left-box-newstitleA"><h3><font color="f12a20" size="+1"><strong>校友祝福</strong></font></h3></a>
+	                          <div id="scrollDiv" class="cbmc-left-box-desc">
+                                  <ul> 
+                                       <volist name="blessing" id="blessing">
+                                          <li><a href="?c=Blessing&a=showById&id=<{$blessing.id}>"><font color="red">☆&nbsp;</font><{$blessing.content}>&nbsp;                    
+                                          <br /><font color="#006600">来自：</font><font color="#999999"><{$blessing.name}></font> <font color="#006600">于</font> <font color="#999999"><{$blessing.addtime|date='Y-m-d',###}></font></a></li>
+                                       </volist> 
+                                   </ul> 
+                              </div>
+                              <div class="cbmc-left-box-descB">
+                              
+                               <a href="?c=xydj"><img src='<{$RootUrl}>/images/xydj.png'/></a>&nbsp;   &nbsp;
+                               <a href="?c=blessing"><img src='<{$RootUrl}>/images/blessing.png'/></a>
+                              
+                               <a href="?c=index&amp;a=al&amp;type=8&amp;id=59">更多&gt;&gt;</a>
+                              </div>
+						 </div>
+               </div>
+			</div>
+		</div>
+   </div>
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="<{$RootUrl}>/Slicebox/css/demo.css">
+<link rel="stylesheet" type="text/css" href="<{$RootUrl}>/Slicebox/css/slicebox.css">
+<link rel="stylesheet" type="text/css" href="<{$RootUrl}>/Slicebox/css/custom.css">
+<script type="text/javascript" src="<{$RootUrl}>/Slicebox/js/modernizr.custom.46884.js"></script>
+<script type="text/javascript" src="<{$RootUrl}>/Slicebox/js/jquery.slicebox.js"></script>
+<!--foot 底部导航 和 声明-->  
+<include file="./Home/View/Index/nav.html" />	

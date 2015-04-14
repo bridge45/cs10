@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改密码</title>
+<link href="<{$RootUrl}>/images/skin.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #EEF2FB;
+}
+-->
+</style>
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="17" valign="top" background="<{$RootUrl}>//images/mail_leftbg.gif"><img src="<{$RootUrl}>/images/left-top-right.gif" width="17" height="29" /></td>
+    <td valign="top" background="<{$RootUrl}>/images/content-bg.gif"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
+      <tr>
+        <td height="31"><div class="titlebt">修改密码</div></td>
+      </tr>
+    </table></td>
+    <td width="16" valign="top" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/nav-right-bg.gif" width="16" height="29" /></td>
+  </tr>
+  <tr>
+    <td valign="middle" background="<{$RootUrl}>/images/mail_leftbg.gif">&nbsp;</td>
+    
+   <!-- 内容区域开始-->
+    
+    <td valign="top" bgcolor="#F7F8F9">  
+         <form name="form1" method="POST" action="?c=AdminAl&a=alterAccount">
+          <table width="100%" height="138" border="0" cellpadding="0" cellspacing="0">
+                 <input type="hidden" name="id" size="25" value="<{$Al.id}>"/>
+                 <input type="hidden" name="navId" size="25" value="<{$Nav['navId']}>"/>
+                  <tr>
+                    <td height="13" valign="top">&nbsp;</td>
+                  </tr>
+                  <tr>
+                            <td>
+                               <table width="1024px" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td width="100px" height="30" align="right" bgcolor="#f2f2f2" class="left_txt2">新帐号：</td>
+                                    <td width="9%" bgcolor="#f2f2f2">&nbsp;</td>
+                                    <td width="48%" height="30" bgcolor="#f2f2f2">
+                                    <input name="username" type="text" id="username" size="25" value="<{$alAdmin}>"/></td>
+                                    <td width="20%" height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
+                                  </tr>
+                                  
+                                   <tr>  <td  height="20" colspan="3"> </td></tr>
+                                    
+                                  <tr>
+                                    <td height="30" align="right" bgcolor="#f2f2f2" class="left_txt2">新密码：</td>
+                                    <td bgcolor="#f2f2f2">&nbsp;</td>
+                                    <td height="30" bgcolor="#f2f2f2"><input type="password" name="password" id='password' size="25" value=""/></td>
+                                     <td height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
+                                  </tr>
+                              </table>
+                      </td>
+                         </tr>
+                          
+                          <tr>
+                            <td height="30" colspan="4" align="right" class="left_txt2">
+                                <table width="100%" height="31"
+                                          border="0" cellpadding="0" cellspacing="0" class="nowtable">
+                                </table>
+                            </td>
+                          </tr>
+                  <tr>
+                          <td height="30" colspan="3">&nbsp;</td>
+                       </tr>
+                       
+                        <tr>
+                          <td width="50%" height="30" align="right"><input type="submit" value="保存" name="B1" /></td>
+                          <td width="6%" height="30" align="right">&nbsp;</td>
+                          <td width="44%" height="30"><input type="reset" value="重置" name="B12" /></td>
+                      </tr> 
+             </table> 
+          </form>
+            
+        </td>
+    
+    <!-- 内容区域结束-->
+    
+    
+    
+    
+    
+    <td background="<{$RootUrl}>/images/mail_rightbg.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_leftbg.gif"><img src="<{$RootUrl}>images/buttom_left2.gif" width="17" height="17" /></td>
+    <td background="<{$RootUrl}>/images/buttom_bgs.gif"><img src="<{$RootUrl}>images/buttom_bgs.gif" width="17" height="17"></td>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/buttom_right2.gif" width="16" height="17" /></td>
+  </tr>
+</table>
+</body>
+
+</html>

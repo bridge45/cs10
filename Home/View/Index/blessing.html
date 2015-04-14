@@ -1,0 +1,116 @@
+<include file="./Home/View/Index/head.html" />
+<script type="text/javascript" src="<{$RootUrl}>/js/index.js"></script>
+    <div id="page">
+        <div id="top">
+            <div id="topcontainer"><div class="view-ad">
+                  <div class="img"><img alt="" src="<{$RootUrl}>/images/blessing.jpg" width='960px' height='217px'></div>
+                  <div class="dqwz">当前位置： <a href="./index.php">首页</a>>>发送祝福</div>
+            </div>
+        </div> 
+     </div>
+   
+   <div id="main">
+		
+    
+    <div id="col3" style="width:950px">
+        <div id="col3_content" class="clearfix">
+            <div id="rightcontainer"><div class="article view-article ">
+                <h2>我要祝福</h2>
+                <div class="mainContent"> 
+                <!-- 祝福模块 -->
+<div id="leftcontainer">
+    <div class="listB">
+	        <div class="list_bodyB">
+	             <form id="formDemoClass" method="post" action="<{:U('home/Blessing/save')}>">
+	          <table border="0" style="border-collapse:collapse;border:0;width:100%;">
+    	           <tbody>
+                   <tr>
+        	            <td><label for="name">您的姓名</label></td>
+		           </tr>
+                   
+                   <tr>
+                      <td><input style="width:100px;" type="text" name="name" id="name"></td>
+                   </tr>
+                   
+                   
+                  <tr>
+        	         <td><label for="content">祝福内容：</label></td>
+		          </tr>
+                  
+                   <tr>
+                      <td><textarea name="content" id="content" cols="27" rows="3" class="txt1"></textarea>
+                   </tr>
+                   
+                   <tr>
+                        <td><label for="connects">您的联系方式：</label></td>
+                   </tr>
+                   
+                <tr>
+                    <td>
+                      <input style="width:100px;" type="text" name="connects" id="connects">
+                  </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                      <label for="verifycode">验证码</label></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                     <input name='verifycode' type=text value="" maxLength=4 size=10 style="width:100px; height:28px">
+                                      <img style="cursor: pointer; vertical-align:top" mce_style="cursor: pointer" src="<{$RootJ}>/Home/Common/verifyCode.php"
+                                        onclick="this.src='<{$RootJ}>/Home/Common/verifyCode.php?'" width="70px" height="28px" alt="刷新验证码"/>
+                  </td>
+                </tr>
+    	
+                <tr style="width:100px;">
+                    <td style="padding-top:10px;"><input style="width:100px;" type="submit" name="submitButton" value="发送祝福" class="submit">
+                    <a href="?c=blessing&a=show" style="padding-left:20px;">查看祝福>></a></td>
+                </tr>
+	</tbody>
+    </table>
+	</form>
+	       </div>
+           <div class="list_bodyB">
+	        
+             <a href="#" class="cbmc-left-box-newstitlec"><h3><font color="f12a20" size="+1"><strong>校友祝福</strong></font></h3></a>
+	                          <div id="scrollDiv" style="width:380px; height:236px;" class="cbmc-left-box-desc">
+                                  <ul> 
+                                       <volist name="blessing" id="blessing">
+                                          <li><a href="?c=Blessing&a=showById&id=<{$blessing.id}>"><font color="red">☆&nbsp;</font><{$blessing.content}>&nbsp;                    
+                                          <br /><font color="#006600">来自：</font><font color="#999999"><{$blessing.name}></font> <font color="#006600">于</font> <font color="#999999"><{$blessing.addtime|date='Y-m-d',###}></font></a></li>
+                                       </volist> 
+                                   </ul> 
+                              </div>
+                           
+            
+            
+            
+            
+            
+            
+	       </div>
+   </div>
+</div>
+
+
+                
+                </div>
+                <h2></h2>
+                <div style="text-align:right; margin-top:15px; color:#999"><{$Config.title}>&nbsp;<{$Config.theme}></div>
+            </div>
+        </div>
+   </div>
+   
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>            
+                        
+                        
+<!--foot 底部导航 和 声明-->  
+<include file="./Home/View/Index/nav.html" />
+</body>
+</html>

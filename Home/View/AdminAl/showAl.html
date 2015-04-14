@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>  </title>
+<link href="<{$RootUrl}>/images/skin.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #EEF2FB;
+}
+-->
+</style>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="17" valign="top" background="<{$RootUrl}>//images/mail_leftbg.gif"><img src="<{$RootUrl}>/images/left-top-right.gif" width="17" height="29" /></td>
+    <td valign="top" background="<{$RootUrl}>/images/content-bg.gif"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
+      <tr>
+        <td height="31"><div class="titlebt"><{$Nav.name}></div></td>
+      </tr>
+    </table></td>
+    <td width="16" valign="top" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/nav-right-bg.gif" width="16" height="29" /></td>
+  </tr>
+  <tr>
+    <td valign="middle" background="<{$RootUrl}>/images/mail_leftbg.gif">&nbsp;</td>
+    
+   <!-- 内容区域开始-->
+    
+    <td valign="top" bgcolor="#F7F8F9">
+          <table width="100%" height="138" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="13" valign="top">&nbsp;</td>
+                  </tr>
+                  <tr>
+                            <td>
+                               <table width="1024px" border="0" cellspacing="0" cellpadding="0"  style="padding-left:15px;">
+                                 
+                                  
+                                  <tr>
+                                    <td class="left_txt2"><font color='#000066'><strong>标题</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>内容</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>排序</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>添加时间</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>操        作</strong></font></td>
+                                    
+                                  </tr>
+                                   <volist name="AlList" id="AlList">
+                                   <tr>
+                                    <td  class="left_txt2"><{$AlList.title}></td>
+                                    <td  class="left_txt2"><{$AlList.content|htmlspecialchars_decode|strip_tags|mb_substr=###,0,20,'utf-8'}>......</td>
+                                    <td  class="left_txt2"><{$AlList.sort}></td>
+                                    <td  class="left_txt2"><{$AlList.addtime|date="Y-m-d H:i:s",###}></td>
+                                    <td class="left_txt2 editFont">
+                                    
+                                    <a href="?c=AdminAl&a=editAl&NavId=<{$Nav.navId}>&id=<{$AlList.id}>" style="color:green">修  改 </a>
+                                    |
+                                    <a href="?c=AdminAl&a=delAl&NavId=<{$Nav.navId}>&id=<{$AlList.id}>"> 删 除</a></td>
+                                  </tr>
+                                  </volist>
+                           
+                              </table>
+                           </td>
+                         </tr>
+                          
+                          <tr>
+                            <td height="30" colspan="4" align="right" class="left_txt2">
+                                <table width="100%" height="31"
+                                          border="0" cellpadding="0" cellspacing="0" class="nowtable">
+                                </table>
+                            </td>
+                          </tr>
+                  <tr>
+                          <td height="30" colspan="3">&nbsp;</td>
+                       </tr>
+          </table>
+        </td>
+    
+    <!-- 内容区域结束-->
+    
+    
+    
+    
+    
+    <td background="<{$RootUrl}>/images/mail_rightbg.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_leftbg.gif"><img src="<{$RootUrl}>images/buttom_left2.gif" width="17" height="17" /></td>
+    <td background="<{$RootUrl}>/images/buttom_bgs.gif"><img src="<{$RootUrl}>images/buttom_bgs.gif" width="17" height="17"></td>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/buttom_right2.gif" width="16" height="17" /></td>
+  </tr>
+</table>
+</body>

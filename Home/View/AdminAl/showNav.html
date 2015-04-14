@@ -1,0 +1,99 @@
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="<{$RootUrl}>/images/skin.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #EEF2FB;
+}
+-->
+</style>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="17" valign="top" background="<{$RootUrl}>//images/mail_leftbg.gif"><img src="<{$RootUrl}>/images/left-top-right.gif" width="17" height="29" /></td>
+    <td valign="top" background="<{$RootUrl}>/images/content-bg.gif"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
+      <tr>
+        <td height="31"><div class="titlebt">导航条</div></td>
+      </tr>
+    </table></td>
+    <td width="16" valign="top" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/nav-right-bg.gif" width="16" height="29" /></td>
+  </tr>
+  <tr>
+    <td valign="middle" background="<{$RootUrl}>/images/mail_leftbg.gif">&nbsp;</td>
+    
+   <!-- 内容区域开始-->
+    
+    <td valign="top" bgcolor="#F7F8F9">
+          <table width="100%" height="138" border="0" cellpadding="0" cellspacing="0">
+             <form name="form1" method="POST" action="admintitlechk.asp">
+                  <tr>
+                    <td height="13" valign="top">&nbsp;</td>
+                  </tr>
+                  <tr>
+                            <td>
+                               <table width="1024px" border="0" cellspacing="0" cellpadding="0"  style="padding-left:15px;">
+                                 
+                                  
+                                  <tr>
+                                 
+                                   <td class="left_txt2"><font color='#000066'><strong>导航条名称</strong></font></td>
+                                   <td class="left_txt2"><font color='#000066'><strong>首页显示</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>导航条链接</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>导航条排序</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>导航条描述</strong></font></td>
+                                    <td class="left_txt2"><font color='#000066'><strong>导航条状态</strong></font></td>
+                                   <td class="left_txt2"><font color='#000066'><strong>操        作</td>
+                                  </tr>
+                                   <volist name="Nav" id="NavVar">
+                                   <tr>
+                                    <td  class="left_txt2" title='<{$NavVar.description}>'><{$NavVar.name}></td>
+                                     <td  class="left_txt2">
+                                     <if condition="($NavVar.showflag eq 1)"> <font color='red'>显示</font><else /> 不显示</if>
+                                     </td>
+                                    <td  class="left_txt2"><{$NavVar.link}></td>
+                                    <td  class="left_txt2"><{$NavVar.sort}></td>
+                                    <td  class="left_txt2"><{$NavVar.description}></td>
+                                    <td  class="left_txt2"><{$NavVar.flag}></td>
+                                    <td class="left_txt2 editFont"><a href="?c=AdminNav&a=editNav&id=<{$NavVar.id}>" style="color:green">修  改 </a>|<a href="?c=AdminNav&a=delNav&id=<{$NavVar.id}>"> 删 除</a></td>
+                                  </tr>
+                                  </volist>
+                           
+                              </table>
+                           </td>
+                         </tr>
+                          
+                          <tr>
+                            <td height="30" colspan="4" align="right" class="left_txt2">
+                                <table width="100%" height="31"
+                                          border="0" cellpadding="0" cellspacing="0" class="nowtable">
+                                </table>
+                            </td>
+                          </tr>
+                  <tr>
+                          <td height="30" colspan="3">&nbsp;</td>
+                       </tr>
+             </form>
+          </table>
+        </td>
+    
+    <!-- 内容区域结束-->
+    
+    
+    
+    
+    
+    <td background="<{$RootUrl}>/images/mail_rightbg.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_leftbg.gif"><img src="<{$RootUrl}>images/buttom_left2.gif" width="17" height="17" /></td>
+    <td background="<{$RootUrl}>/images/buttom_bgs.gif"><img src="<{$RootUrl}>images/buttom_bgs.gif" width="17" height="17"></td>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/buttom_right2.gif" width="16" height="17" /></td>
+  </tr>
+</table>
+</body>

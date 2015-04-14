@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>  </title>
+<body>
+<!-- 配置文件 -->
+<script type="text/javascript" src="<{$RootUeditor}>/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="<{$RootUeditor}>/ueditor/ueditor.all.js"></script>
+<!-- 语言包文件(建议手动加载语言包，避免在ie下，因为加载语言失败导致编辑器加载失败) -->
+<script type="text/javascript" src="<{$RootUeditor}>/ueditor/lang/zh-cn/zh-cn.js"></script>
+<link href="<{$RootUrl}>/images/skin.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #EEF2FB;
+}
+-->
+</style>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="17" valign="top" background="<{$RootUrl}>//images/mail_leftbg.gif"><img src="<{$RootUrl}>/images/left-top-right.gif" width="17" height="29" /></td>
+    <td valign="top" background="<{$RootUrl}>/images/content-bg.gif"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
+      <tr>
+        <td height="31"><div class="titlebt">添加首页图片</div></td>
+      </tr>
+    </table></td>
+    <td width="16" valign="top" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/nav-right-bg.gif" width="16" height="29" /></td>
+  </tr>
+  <tr>
+    <td valign="middle" background="<{$RootUrl}>/images/mail_leftbg.gif">&nbsp;</td>
+    
+   <!-- 内容区域开始-->
+    
+    <td valign="top" bgcolor="#F7F8F9">
+     <form name="form1" method="POST" action="?c=AdminBanner&a=saveNav">
+          <table width="100%" height="138" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="13" valign="top">&nbsp;</td>
+                  </tr>
+                  <tr>
+                            <td>
+                               <table width="1024px" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt2">图片上文字：</td>
+                                    <td width="3%" bgcolor="#f2f2f2">&nbsp;</td>
+                                    <td width="20%" height="30" bgcolor="#f2f2f2">
+                                    <input name="text" type="text" id="text" size="25" /></td>
+                                    <td width="57%" height="30" bgcolor="#f2f2f2" class="left_txt">图片上面显示的文字信息</td>
+                                  </tr>
+                                  
+      
+                                  
+                                  <tr>
+                                    <td height="30" align="right" class="left_txt2">内 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容：</td>
+                                   <td height="30" align="right" colspan="3">
+									 <script id="editor" type="text/plain" style="width:785px;height:400px;">这里只上传图片</script> </td>
+                                  </tr>
+                             
+                              </table>
+                           </td>
+                         </tr>
+                          
+                          
+                           <tr>
+                          <td height="30" colspan="3">&nbsp;</td>
+                       </tr>
+                     
+                  <tr>
+                          <td height="30" colspan="3">&nbsp;</td>
+                       </tr>
+                       
+                        <tr>
+                          <td width="50%" height="30" align="right"><input type="submit" value="保存" name="B1" /></td>
+                          <td width="6%" height="30" align="right">&nbsp;</td>
+                          <td width="44%" height="30"><input type="reset" value="重置" name="B12" /></td>
+                      </tr>
+             
+          </table>
+          </form>
+        </td>
+    
+    <!-- 内容区域结束-->
+    
+    
+    
+    
+    
+    <td background="<{$RootUrl}>/images/mail_rightbg.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_leftbg.gif"><img src="<{$RootUrl}>images/buttom_left2.gif" width="17" height="17" /></td>
+    <td background="<{$RootUrl}>/images/buttom_bgs.gif"><img src="<{$RootUrl}>images/buttom_bgs.gif" width="17" height="17"></td>
+    <td valign="bottom" background="<{$RootUrl}>/images/mail_rightbg.gif"><img src="<{$RootUrl}>images/buttom_right2.gif" width="16" height="17" /></td>
+  </tr>
+</table>
+<script type="text/javascript">
+    var editor = new baidu.editor.ui.Editor({
+        textarea:'content'
+    });
+    editor.render("editor");
+</script>
+</body>
+</html>
